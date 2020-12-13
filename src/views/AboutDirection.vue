@@ -70,7 +70,7 @@ export default {
   mounted:function(){
     let filt = '?id='+this.id
     axios
-      .get('http://deerr1.pythonanywhere.com/api/infoinstitutions/'+filt)
+      .get('https://deerr1.pythonanywhere.com/api/infoinstitutions/'+filt)
       .then(response => (this.information = response.data[0]));
   },
 }
