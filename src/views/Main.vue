@@ -13,14 +13,16 @@
             </div>
         </div>
         <div class="program">
-            <div id="program" class="heading text">
-                Программы обучения
-            </div>
-            <div class="btn-group row but" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-primary col-xl-1 " >СТО</button>
-                <button type="button" class="btn btn-primary col-xl-4"> Бакалавриат/Cпециалитет</button>
-                <button type="button" class="btn btn-primary col-xl-3">Магистратура</button>
-                <button type="button" class="btn btn-primary col-xl-3 ">Аспирантура</button>
+            <div class="header-program">
+                <div id="program" class="heading text-center">
+                    Программы обучения
+                </div>
+                <div class="btn-group row but" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary col-xl-1 " >СТО</button>
+                    <button type="button" class="btn btn-primary col-xl-4"> Бакалавриат/Cпециалитет</button>
+                    <button type="button" class="btn btn-primary col-xl-3">Магистратура</button>
+                    <button type="button" class="btn btn-primary col-xl-3 ">Аспирантура</button>
+                </div>
             </div>
             <component :is="currentComp" ></component>
         </div>
@@ -82,12 +84,20 @@ export default {
         flex-basis: 1500px;
         align-items: center;
         /* flex-direction: row; */
+        
         margin-top: 2%;
+    }
+    .header-program{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* flex-wrap: wrap; */
+        flex-basis: 800px;
     }
     
     .row{
-        margin-left: auto;
-        margin-right: auto;
+            /* margin-left: 1%;
+            margin-right: 1%; */
     }
     .btn{
         height: 100%;
@@ -104,8 +114,9 @@ export default {
     .but{
         display: flex;
         justify-content: center;
-        margin-left: 10%;
-        margin-right: 10%;
+        flex-basis: 100%;
+        /* margin-left: 10%;
+        margin-right: 10%; */
         /* text-align: left; */
     }
     
