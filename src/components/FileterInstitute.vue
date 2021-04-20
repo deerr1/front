@@ -86,13 +86,38 @@ export default {
 // },
   mounted:function(){
     this.filt = '?alias='+this.setinst['inst']
+    if (this.setinst['form'].length>0){
+      if(this.setinst['form'].indexOf('Очное обучение')!=-1){
+        this.filt = this.filt + '&form=0'
+      }
+      if(this.setinst['form'].indexOf('Заочное обучение')!=-1){
+        this.filt = this.filt + '&form=1'
+      }
+    }
+    if (this.setinst['payment'].length>0){
+      if (this.setinst['payment'].indexOf('Бюджет')!=-1){
+        this.filt = this.filt + '&availability_of_budger=true'
+      }
+      if (this.setinst['payment'].indexOf('Коммерция')!=-1){
+        this.filt = this.filt + '&availability_of_paid=true'
+      }
+    }
+    if(this.setinst['program'].length>0){
+      for (let i in this.setinst['program']){
+        this.filt = this.filt + '&qualification='+this.setinst['program'][i]
+      }
+    }
+    if(this.setinst['subjects'].length>0){
+      for (let i in this.setinst['subjects']){
+        this.filt = this.filt + '&points__subject__subject='+this.setinst['subjects'][i]
+      }
+    }
     axios
       .get('infoinstitutions/'+this.filt)
       .then(response => (this.information = response.data, this.boolinf = (this.information.length == 0)));
     // alert(this.information.filter())
   },
   updated:function(){
-    
     // alert(this.setinst['form'].indexof('Очное обучение')!=1)
   // console.log(this.setinst['form'].indexOf('Заочное обучение'))
     if (this.setinst['form'].length>0){

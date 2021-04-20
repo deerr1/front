@@ -83,6 +83,8 @@
     </div>
 </template>
 
+
+
 <script>
 import Institutions from "../components/Institutions"
 import FileterInstitute from "../components/FileterInstitute"

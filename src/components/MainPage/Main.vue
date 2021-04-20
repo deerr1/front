@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import Program from '../components/Program'
+import Program from '../Program'
 export default {
     name: 'Main',
     data: function(){

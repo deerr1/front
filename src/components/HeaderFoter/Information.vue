@@ -17,42 +17,40 @@
           <button type="button" class="btn btn-primary">Подать заявление</button>
         </div>
       </div>
-      <div>
       <div class="video-mask">
         <video loop muted autoplay >
-          <source src="./../assets/yugu.mp4" type="video/mp4">
+          <source src="./../../assets/yugu.mp4" type="video/mp4">
         </video>
       </div>
-      </div>
     </div>
-      <nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #008D49;">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul  class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <router-link to = "/main" class="nav-link text-white" >Главная </router-link>
-            </li>
-            <li class="nav-item active">
-              <router-link to = "/" class="nav-link text-white" >Приемная 2021 </router-link>
-            </li>
-            <li class="nav-item active">
-              <router-link to = "" class="nav-link text-white" >Условия обучения </router-link>
-            </li>
-            <li class="nav-item active">
-              <router-link to = "" class="nav-link text-white" >Контакты </router-link>
-            </li>
-            <li class="nav-item active">
-              <router-link to = "" class="nav-link text-white" >Архив </router-link>
-            </li>
-          </ul>
-           <ul  class="navbar-nav mr-1">
+    <nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #008D49;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul  class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <router-link to = "/main" class="nav-link text-white" >Главная </router-link>
+          </li>
+          <li class="nav-item active">
+            <router-link to = "/" class="nav-link text-white" >Приемная 2021 </router-link>
+          </li>
+          <li class="nav-item active">
+            <router-link to = "" class="nav-link text-white" >Условия обучения </router-link>
+          </li>
+          <li class="nav-item active">
+            <router-link to = "" class="nav-link text-white" >Контакты </router-link>
+          </li>
+          <li class="nav-item active">
+            <router-link to = "" class="nav-link text-white" >Архив </router-link>
+          </li>
+        </ul>
+        <ul  class="navbar-nav mr-1">
           <router-link to = "" class="nav-link text-white " >Войти</router-link>
-          </ul>
-        </div>
-      </nav>
-    <div> 
+        </ul>
+      </div>
+    </nav>
+    <div>
       <router-view/>
     </div>
      <footer class="row justify-content-center">
@@ -100,14 +98,14 @@ export default {
     width: 100%;
 
   }
-  .text-video{ 
+  .text-video{
     font-weight: bold;
     font-size: 4vmin;
     line-height: 125%;
     color: ivory;
     margin-top: 10%;
   }
-  
+
   .text-in-video{
     margin: 2%;
   }
