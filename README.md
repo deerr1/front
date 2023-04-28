@@ -1,24 +1,7 @@
 # site_front
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Проект с макетом сайта югу. Главным функционалом для реализации было создание фильтра для выбора направления по параметрам:
+- Предмет Егэ
+- Программа
+- Форма обучения
+- Оплата(Бюджет, коммерция)
